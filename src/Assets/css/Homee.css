@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Yellowtail&display=swap');
+
+
+
+
+:root {
+    --caveant-font : "Caveat", cursive;
+    --anta-font : "Anta", sans-serif;
+    --ubuntu-font : "Ubuntu", sans-serif;
+    --font-Dancing : "Dancing", cursive;
+    --font-great : "Great Vibes", cursive;
+    --font-protest: "Protest Revolution", sans-serif;
+    --font-yellow-tail: "Yellowtail", cursive;
+    --navy : #265073;
+    --navi : #9AD0C2;
+    --sage : #F1FADA;
+    --teal : #2D9596;
+    --marron : rgb(139, 0, 0);
+}
+.Navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid var(--marron);
+}
+.Navbar-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: var(--font-yellow-tail);
+}
+.title-first {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 10px;
+    color: var(--marron);
+    letter-spacing: 3px;
+     margin-right: 10px;
+
+}
+.title-second {
+    font-size: 35px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 10px;
+    color: rgb(201, 201, 201);
+    letter-spacing: 3px;
+}
+.Navbar .hr {
+    height: 80%;
+    width: 2px;
+    background-color: var(--marron);
+    margin-right: 15px;
+}
+.btn-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.btn-Navbar {
+    height: 60%;
+    margin: 0 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: var(--anta-font);
+    font-size: 15px;
+}
+.Navbar button:hover {
+    background-color: var(--marron);
+    cursor: pointer;
+} 
+.burger-btn {
+    display: none;
+}
+.burger-btn .fa-bars {
+    color: var(--marron);
+    font-size: 25px;
+}
+.btn-close {
+    display: none;
+    color: var(--marron);
+}
+.select-option-genre, .select-option-tv {
+    display: none;
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid var(--marron);
+}
+
+
+
+
+
+.search-genre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 20px;
+    height: 130px;
+    gap: 10px;
+}
+.select-genre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.select-genre button {
+    height: 40px;
+    color: white;
+    font-size: 13px;
+    font-family: var(--anta-font);
+    background-color: transparent;
+    border: 1px solid var(--marron);
+}
+.select-genre button:hover {
+    background-color: rgb(192, 192, 192);
+    cursor: pointer;
+}
+.form-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form-search input {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: var(--anta-font);
+    border: 1px solid var(--marron);
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+.form-search input::placeholder {
+    color: white;
+    direction: left;
+    text-align: center;
+}
+
+
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 10px;
+}
+.pages {
+    display: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: var(--navy);
+    border: none;
+    color: var(--sage);
+    font-family: var(--anta-font);
+    font-size: 15px;
+}
+.pages:disabled {
+    background-color: black;
+}
+.pages:hover {
+    background-color: rgba(12, 12, 12, 0.74);
+    cursor: pointer;
+}
+.next {
+    width: 90px;
+    height: 50px;
+    background-color: var(--marron);
+    color: white;
+    font-family: var(--anta-font);
+    margin: 0 30px;
+    cursor: pointer;
+}
+.next:disabled {
+    background-color: black;
+}
+.input-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    text-align: center;
+    background-color: rgb(173, 173, 173);
+    color: var(--marron);
+    font-family: var(--anta-font);
+    font-weight: bold;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+
+.popular-movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.movie-container {
+    width : 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.movie-card {
+    display: inline-block;
+    transition: transform .2s;
+    width: 300px;
+    height: 450px;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+.movie-card:hover{
+    transform: scale(1.2);
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.movie-card-image{
+    height: 100%;
+    width: 100%;
+}
+.cards__overlay {
+    position: absolute;
+    padding: 0 1rem 1rem 1rem;
+    bottom: 0px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    opacity: 0;
+    transition: opacity .2s;
+    color: white;
+} 
+.cards__overlay:hover {
+    opacity: 1;
+}
+
+.card__title {
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.card__runtime {
+    font-size: .75rem;
+    margin-bottom: 0.25rem;
+}
+
+.card__rating {
+    float: right;
+}
+
+.card__description {
+    font-style: italic;
+    font-size: .75rem;
+    margin-bottom: 0.25rem;
+}
+
+
+
+
+
+/* TV */
+
+.search-tv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 20px;
+    height: 130px;
+    gap: 10px;
+}
+.genre-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.genre-buttons button {
+    height: 40px;
+    color: white;
+    font-size: 13px;
+    font-family: var(--anta-font);
+    background-color: transparent;
+    border: 1px solid var(--marron);
+}
+.genre-buttons button:hover {
+    background-color: rgb(192, 192, 192);
+    cursor: pointer;
+}
+
+.search-tv input {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: var(--anta-font);
+    border: 1px solid var(--marron);
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+.form-search input::placeholder {
+    color: white;
+    direction: left;
+    text-align: center;
+}
+.tv-movie-container {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.tv-show-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 10px;
+    margin-top: 10px;
+}
+.tv-card {
+    display: inline-block;
+    transition: transform .2s;
+    width: 300px;
+    height: 450px;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+.tv-card:hover{
+    transform: scale(1.2);
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.tv-card-image {
+    height: 100%;
+    width: 100%;
+}
+.tv-card-overlay {
+    position: absolute;
+    padding: 0 1rem 1rem 1rem;
+    bottom: 0px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    opacity: 0;
+    transition: opacity .2s;
+    color: white;
+} 
+.tv-card-overlay:hover {
+    opacity: 1;
+}
+
+.tv-card__title {
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.tv-card__runtime{
+    font-size: .75rem;
+    margin-bottom: 0.25rem;
+}
+
+.tv-card__rating {
+    float: right;
+}
+
+.tv-card__description {
+    font-style: italic;
+    font-size: .75rem;
+    margin-bottom: 0.25rem;
+}
+.tv-pagination {
+    display: flex;
+    margin: 20px 0;
+    gap: 20px;
+}
+.tv-pagination button {
+    height: 40px;
+    width: 50px;
+    background-color: transparent;
+    border: 1px solid var(--marron);
+    color: var(--marron);
+    font-family: var(--anta-font);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+@media (min-width: 0px) and (max-width: 600px) {
+    .Navbar {
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        position: fixed;
+        z-index: 1000;
+        background-color: black;
+    }
+    .Navbar-title {
+        height: 100%;
+        margin: 0 10px;
+        gap: 10px;
+    }
+    .title-second, .title-first {
+        font-size: 25px;
+        margin: 0;
+        letter-spacing: 1px;
+    }
+    .hr {
+        display: none;
+    }
+    .btn-nav {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.829);
+        width: 100%;
+        height: 100%;
+        z-index: 1001;
+        
+    }
+    .btn-Navbar {
+        height: 40px;
+        width: 200px;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+    .burger-btn {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin-right: 15px;
+    }
+    .fa-bars:hover {
+        color: black;
+    }
+    .btn-close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+    }
+    .select-genre , .genre-buttons{
+        display: none;
+    }
+    .select-option-genre, .select-option-tv {
+        display: block;
+        width: 90%;
+        height: 40px;
+        text-align: center;
+        border-radius: 5px;
+        border: 3px solid(--marron);
+    }
+    .form-search input, .search-tv input {
+        width: 90%;
+    }
+    .movie-container {
+        width: 100%;
+        gap: 1px;
+    }
+    .search-genre, .search-tv {
+        margin-top: 50px;
+    }
+    .popular-movie ,.tv-show-list {
+        width: 100%;;
+    }
+
+    .movie-card, .tv-card {
+        width: 180px;
+        height: 290px;
+    }
+    .movie-card:hover, .tv-card:hover {
+        transform: scale(1);
+         z-index:0;
+    }
+    .popular-movie-image, .tv-card-image {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .pagination {
+        display: flex;
+        margin: 20px 0;
+        gap: 5px;
+    }
+    .pages {
+        display: none;
+        height: 25px;
+        width: 25px;
+        border-radius: 100%;
+        text-align: center;
+        background-color: var(--navy);
+        border: none;
+        color: var(--sage);
+        font-family: var(--anta-font);
+        font-size: 50%;
+    }
+    .next {
+        width: 55px;
+        height: 35px;
+        margin: 0 5px;
+        font-size: 10px;
+    }
+    .input-pagination {
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+
+  }
+  
+  @media (min-width: 601px) and (max-width: 770px) {
+    .select-genre, .genre-buttons {
+        display: none;
+    }
+    .select-option-genre, .select-option-tv {
+        display: block;
+    }
+    .form-search input, .search-tv input {
+        width: 90%;
+    }
+    .popular-container {
+        gap: 5px;
+        width: 100%;
+    }
+    .input-pagination {
+        display: block;
+    }
+    .pages {
+        display: none;
+    }
+    .pagination {
+        display: flex;
+        margin: 20px 0;
+        gap: 5px;
+    }
+ }
+
+  
+  /* Untuk layar dengan lebar kurang dari atau sama dengan 992px */
+  @media (min-width: 771px) and (max-width: 992px) {
+    .select-genre, .genre-buttons {
+        display: none;
+    }
+    .select-option-genre, .select-option-tv {
+        display: block;
+    }
+    .form-search input, .search-tv input {
+        width: 90%;
+    }
+    .input-pagination {
+        display: block;
+    }
+    .pages {
+        display: none;
+    }
+    .pagination {
+        display: flex;
+        margin: 20px 0;
+        gap: 5px;
+    }
+  }
+  
+  /* Untuk layar dengan lebar kurang dari atau sama dengan 1200px */
+  @media (min-width: 992px)  and (max-width: 1400px) {
+    .select-genre, .genre-buttons {
+        display: none;
+    }
+    .select-option-genre, .select-option-tv {
+        display: block;
+    }
+    .form-search input, .search-tv input {
+        width: 90%;
+    }
+  }
+  
+  /* Untuk layar dengan lebar lebih dari 1200px */
+  @media only screen and (min-width: 1200px) {
+    /* Ganti gaya CSS di sini */
+  }
